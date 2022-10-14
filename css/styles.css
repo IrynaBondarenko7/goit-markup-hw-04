@@ -17,6 +17,8 @@ body {
   --hero-bg-color: #2f303a;
   --border-colour: #ececec;
   --img-overlay-color: rgba(47, 48, 58, 0.4);
+  --bg-icon-features: #f5f4fa;
+  --social-color: #afb1b8;
 }
 
 p,
@@ -73,6 +75,7 @@ img {
   display: flex;
   gap: 50px;
 }
+
 .header-logo {
   font-family: "Raleway", sans-seri;
   font-weight: 700;
@@ -112,14 +115,37 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  background-color: var(--white-color);
 }
 .contacts-mail:hover,
 .contacts-mail:focus {
   color: var(--accent-color);
 }
+
 .contacts-tel:hover,
 .contacts-tel:focus {
   color: var(--accent-color);
+}
+.contacts-envelope {
+  fill: currentColor;
+}
+.contacts-phone {
+  fill: currentColor;
+}
+/*.contacts-mail:hover .contacts-envelope,
+.contacts-mail:focus .contacts-envelope {
+  fill: var(--accent-color);
+}*/
+
+.contacts-mail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contacts-tel {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 /*----------------------------------HERO------------------------------*/
 .hero {
@@ -184,6 +210,20 @@ img {
 }
 .features-item {
   flex-basis: calc((100% - 90px) / 4);
+}
+.features-icon-box {
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bg-icon-features);
+  border-radius: 4px;
+}
+.icon-features {
+  margin: 25px 100px;
+}
+
+.features-box {
+  padding-top: 30px;
 }
 .features-title {
   font-weight: 700;
@@ -252,7 +292,35 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+.social-team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 30px;
+}
+.social-team-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-social {
+  fill: var(--social-color);
+}
+.social-link:hover svg {
+  fill: var(--white-color);
+}
+.social-link:hover {
+  background-color: var(--accent-color);
 }
 /*-----------------------FOOTER------------------*/
 .log-white {
@@ -296,6 +364,17 @@ img {
   margin-right: 0;
   display: block;
   margin-bottom: 20px;
+}
+.social-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-box {
+  display: flex;
 }
 
 /*-----------PORTFOLIO PAGE--------------*/
