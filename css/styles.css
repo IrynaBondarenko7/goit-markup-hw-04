@@ -300,7 +300,7 @@ img {
   justify-content: center;
   padding-bottom: 30px;
 }
-.social-team-item:not(:first-child) {
+.social-item:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -316,11 +316,26 @@ img {
 .icon-social {
   fill: var(--social-color);
 }
-.social-link:hover svg {
+.social-link:hover svg,
+.social-link:focus svg {
   fill: var(--white-color);
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
+}
+/*-----------------------Постійні клієнти------------*/
+
+.clients {
+  padding: 94px 0;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
 }
 /*-----------------------FOOTER------------------*/
 .log-white {
@@ -375,6 +390,33 @@ img {
 }
 .footer-box {
   display: flex;
+}
+.footer-contacts-box {
+  margin-right: 70px;
+}
+.social-text {
+  margin-bottom: 20px;
+}
+.social-footer-list {
+  display: flex;
+}
+.social-link-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link-footer:hover .icon-social,
+.social-link-footer:focus .icon-social {
+  fill: var(--white-color);
+}
+
+.social-link-footer:focus,
+.social-link-footer:hover {
+  background-color: var(--accent-color);
 }
 
 /*-----------PORTFOLIO PAGE--------------*/
