@@ -425,7 +425,10 @@ img {
 }
 .footer-box {
   display: flex;
-  gap: 70px;
+  align-items: baseline;
+}
+.footer-contacts-box {
+  margin-right: 70px;
 }
 
 .social-text {
@@ -450,8 +453,11 @@ img {
   justify-content: center;
   background-color: var(--sosial-bg-footer-color);
 }
-.social-link-footer:hover .icon-social,
-.social-link-footer:focus .icon-social {
+.icon-social-footer {
+  fill: var(--white-color);
+}
+.social-link-footer:hover .icon-social-footer,
+.social-link-footer:focus .icon-social-footer {
   fill: var(--white-color);
 }
 
@@ -510,6 +516,7 @@ img {
   gap: 30px;
 }
 .projects-item {
+  border: 1px solid #eeeeee;
   width: calc((100% - 60px) / 3);
 }
 .projects-title {
@@ -529,11 +536,11 @@ img {
 }
 .projects-link {
   text-decoration: none;
+  display: block;
 }
-.projects-item:hover {
+.projects-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  border: 1px solid #eeeeee;
 }
 .projects-box {
   padding: 20px 24px;
